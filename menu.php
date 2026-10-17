@@ -69,7 +69,7 @@ function renderImage(?string $imagePath, string $fallbackIcon): void {
 
 function foodIcon(string $name): string {
     $lower = strtolower($name);
-    if (str_contains($lower, 'rice')) return '&#127770;';
+    if (str_contains($lower, 'rice')) return '&#127834;';
     if (str_contains($lower, 'tilapia') || str_contains($lower, 'fish')) return '&#128031;';
     if (str_contains($lower, 'fufu') || str_contains($lower, 'banku')) return '&#127858;';
     if (str_contains($lower, 'chicken')) return '&#127831;';
@@ -80,7 +80,7 @@ function drinkIcon(string $category): string {
     return match ($category) {
         'WATER' => '&#128167;',
         'WINE' => '&#127863;',
-        default => '&#129396;',
+        default => '&#129380;',
     };
 }
 ?>
